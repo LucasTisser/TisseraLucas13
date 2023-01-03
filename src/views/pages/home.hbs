@@ -1,0 +1,16 @@
+<h2>Hi! You're on the homepage.</h2>
+{{#if status}}
+  <h4>Bienvenido! Estas logeado</h4>
+  <p>Only logged users can listen to this masterpiece, enjoy</p>
+  <button class="btn btn-danger my-5" onclick="location.href='/api/usuarios/logout'">LOGOUT</button>
+{{else}}
+  <h4>Oops! Looks like you're not logged in</h4>
+
+  <div class="text-left">
+      <button class="btn btn-success my-3" onclick="location.href= '/api/usuarios/register'">Ir a Register</button>
+  </div>
+
+  <div class="text-right">
+            <button class="btn btn-success my-3" onclick="location.href = '/api/usuarios/login'">Ir a Login</button>
+        </div>
+{{/if}}

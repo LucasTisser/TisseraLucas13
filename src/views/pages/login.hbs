@@ -1,0 +1,45 @@
+<h2>Login</h2>
+
+<div class="row g-3">
+
+  <form class="row g-3" action="/api/usuarios/login" method="POST">
+    <div class="col-sm-3">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="basic-addon1">Usuario</span>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          class="form-control"
+          placeholder="Usuario"
+          aria-label="Usuario"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="basic-addon2">Contraseña</span>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          class="form-control"
+          placeholder="Password"
+          aria-label="Password"
+          aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="d-grid gap-2">
+        <input class="btn btn-success btn-sm my-3" value="Login" type="submit">
+      </div>
+    </div>
+  </form>
+  <br>
+  <div class="text-left">
+            <button class="btn btn-success my-3" onclick="location.href= '/api/usuarios/register'">Ir a Register</button>
+  </div>
+</div>
